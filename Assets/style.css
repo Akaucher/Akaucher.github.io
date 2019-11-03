@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+}
+
+a:hover{
+    color:green;
+}
+
+a{
+   color: #777777; 
+   text-decoration: none;
+}
+
+.maincontent{
+    background-color: #ffffff;
+    color: #777777; 
+    text-align: left;
+    font-size: 150%;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #cccccc;
+    padding: 20px;
+    margin-top: 2%;
+    margin-bottom: 50px;
+    margin-left: 15%;
+    margin-right: 15%;
+    bottom: 70%;
+    position: relative;
+    clear: both;
+    overflow: auto;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.header_left{
+    background-color: #4aaaa5;
+    color: aliceblue;
+    height: 5%;
+    width: 15%;
+    float: left;
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    top: 2%;
+    left: 15%;
+    padding: 1%;
+    line-height: 150%;
+    font-size: 200%;
+    font-family: Georgia', Times, 'Times New Roman', serif';
+}
+
+.header_top{
+    background-color: #ffffff;
+    color: darkgreen;
+    width: 100%;
+    text-align: right;
+    height: 100px;
+    line-height: 120px;
+    word-spacing: 25px;
+    border-bottom: 5px  #cccccc  solid;
+    font-family: Georgia', Times, 'Times New Roman', serif';
+}
+.image{
+    position: relative;
+    float: left;
+    margin-right: 10px;
+}
+
+.links{
+    display: inline;
+    position: absolute;
+    right: 10%;
+}
+body{
+    background-image: url("images/hotel-wallpaper.png");
+}
+footer{
+    background-color: #666666;
+    border-top: solid #4aaaa5 8px;
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+    line-height: 100px;
+    position: sticky;
+    margin-top: 10%;
+    height: 150px;
+}
+h2{
+    color: #4aaaa5;
+    font-weight: 700;
+}
+
+.form1{
+    width: 100%;
+}
+
+.boxtext1{
+background-color: #4aaaa5;
+color: aliceblue;
+width: 300px;
+margin: auto;
+text-align: center;
+position: absolute;
+bottom: 5%;
+line-height: 150%;
+font-size: 200%;
+font-family: Georgia', Times, 'Times New Roman', serif';
+}
+
+.box1{
+    position: relative;
+    top: 10px;
+    width: 300px;
+}
+
+.boxtext2{
+    background-color: #4aaaa5;
+    color: aliceblue;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    bottom: 5%;
+    line-height: 150%;
+    font-size: 200%;
+    font-family: Georgia', Times, 'Times New Roman', serif';
+    }
+    
+.box2{
+    position: relative;
+    top: 10px;
+    width: 300px;
+
+}
+
+.boxtext3{
+    background-color: #4aaaa5;
+    color: aliceblue;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    bottom: 5%;
+    line-height: 150%;
+    font-size: 200%;
+    font-family: Georgia', Times, 'Times New Roman', serif';
+    }
+    
+.box3{
+    position: relative;
+    top: 10px;
+}
+
+.boxtext4{
+    background-color: #4aaaa5;
+    color: aliceblue;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    bottom: 5%;
+    line-height: 150%;
+    font-size: 200%;
+    font-family: Georgia', Times, 'Times New Roman', serif';
+    }
+    
+.box4{
+    position: relative;
+    top: 10px;
+}
+
+.boxtext5{
+    background-color: #4aaaa5;
+    color: aliceblue;
+    width: 300px;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: 5%;
+    line-height: 150%;
+    font-size: 200%;
+    font-family: Georgia', Times, 'Times New Roman', serif';
+    }
+    
+.box5{
+    position: relative;
+    top: 10px;
+}
+.flexcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+}
