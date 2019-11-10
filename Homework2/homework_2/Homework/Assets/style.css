@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-image: url("images/hotel-wallpaper.png");
+}
+
+a:hover{
+    color:green;
+}
+
+.navbar-brand{
+    font-size: 150%;
+}
+
+.jumbotron{
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+}
+
+.footText{
+    text-align: center;
+}
+
+h2{
+    font-size: 400%;
+}
+
+.navbar-brand{
+    padding-left: 25%;
+}
