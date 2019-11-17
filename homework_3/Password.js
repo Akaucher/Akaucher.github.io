@@ -1,12 +1,12 @@
 
 function generatepassword(){
-//declare variables for password criteria
 // let desiredlength = prompt("How long would you like your password to be?")
-// let desiredproperties_upperletter = document.getElementById("uppercase");
+// let desiredproperties_upperletter = document.getElementById("uppercase"); 
 // let desiredproperties_lowerletter = document.getElementById("lowercase");
 // let desiredproperties_unicode = document.getElementById("unicode");
 // let desiredproperties_interger = document.getElementById("interger");
 
+//declare variables for password criteria
 let desiredlength = prompt("How long would you like your password to be?")
 let desiredproperties_upperletter = confirm("uppercase");
 let desiredproperties_lowerletter = confirm("lowercase");
@@ -29,7 +29,7 @@ if (desiredproperties_interger == false && desiredproperties_lowerletter == fals
 }
 
 if (desiredlength < 8 || desiredlength > 128){
-    console.log("Length no in range");
+    console.log("Length not in range");
     alert("Please Select a value between 8 and 128");
     var noConditionsMet = true;
     let desiredproperties_upperletter = false;
@@ -74,8 +74,8 @@ if(noConditionsMet){
 }
 
 console.log(password_formula)
-//generate password by repeating random numbers to the length of the password_formula
 
+//generate password by repeating random numbers to the length of the password_formula
 for (let i = 0; i < desiredlength; i++) {
     var Randompicker = Math.floor((Math.random() * (password_formula.length)));
     // console.log(password_formula[Randompicker]) <--- uncomment to see relation of randomly picked intergers to password values
@@ -92,4 +92,5 @@ function CopyToClipboard(){
     var CopyText = document.getElementById("password");
     CopyText.select();
     document.execCommand("copy");
+    alert("Password copied to Clipboard")
 }
