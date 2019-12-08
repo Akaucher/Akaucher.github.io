@@ -5,82 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
   </head>
   <body>
-    <div class="container">
-      <div class="jumbotron">
-        <div class="container">
-          <div class="row">
-          <h1 class="display-4">Password Generator</h1>
-            </div>
-              <div class="row">
-                <div class="col">      
-                  <div class="input-group mb-3">
-                      <div class="input-group-prepend">
-                        <div class="input-group-text">Uppercase 
-                          <input type="checkbox" aria-label="Checkbox for following text input" id="uppercase"> 
-                        </div>
-                      </div>
-                    </div>
-                </div>
-                <div class="col">
-                  <div class="input-group mb-3">
-                      <div class="input-group-prepend">
-                        <div class="input-group-text">Lowercase 
-                          <input type="checkbox" id="lowercase">
-                        </div>
-                      </div>
-                    </div>
-                </div>
-                <div class="col">
-                  <div class="input-group mb-3">
-                      <div class="input-group-prepend">
-                        <div class="input-group-text">Special Characters 
-                          <input type="checkbox" id="unicode"> 
-                        </div>
-                      </div>
-                    </div>
-                </div>
-                <div class="col">
-                  <div class="input-group mb-3">
-                      <div class="input-group-prepend">
-                        <div class="input-group-text">Numbers 
-                          <input type="checkbox" id="interger"> 
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>  
-              <div class="row">
-                <div class="col">    
-                  <div class="input-group mb-3">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroup-sizing-default">
-                          Please Choose between 8 and 128 characters</span>
-                      </div>
-                      <input type="number" class="form-control" id= "length" min="0">
-                    </div>
-                </div>
-              </div>              
-            <hr class="my-4">
-            <h2>Generate a Password</h2>
-            <textarea
-              readonly
-              id="password"
-              placeholder="Your Secure Password"
-              aria-label="Generated Password"
-            ></textarea>
-            <button id="generate" onclick="generatepassword()" type= "button" class="btn btn-primary">Generate Password</button>
-            <button id="copy" onclick="CopyToClipboard()" type= "button" class="btn btn-info">
-              Copy to Clipboard
-            </button>
-          <script src="Password.js"></script>
-        </div>
-      </div>
-    </div>
+      
+    <header>
+      <h1>Password Generator</h1>
+    </header>
+    <!-- <form>
+      <input id="uppercase" type="checkbox">Upper Case Characters<br>
+      <input id="lowercase" type="checkbox">Lower Case Characters<br>
+      <input id="unicode" type="checkbox">Special Characters<br>
+      <input id="interger" type="checkbox">Intergers<br>
+    </form> -->
+    <h2>Generate a Password</h2>
+    <textarea
+      readonly
+      id="password"
+      placeholder="Your Secure Password"
+      aria-label="Generated Password"
+    ></textarea>
+    <button id="generate" onclick="generatepassword()">Generate Password</button>
+    <button id="copy" onclick="CopyToClipboard()">
+      Copy to Clipboard
+    </button>
+    <script src="Password.js"></script>
   </body>
 </html>
